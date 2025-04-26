@@ -35,7 +35,7 @@ Configure Database:
 
 The default database is SQLite, and the database file (ecommerce.db) is created automatically.
 To use SQL Server, update the connection string in appsettings.json:"ConnectionStrings": {
-  "DefaultConnection": "Server=your_server;Database=ECommerceDb;Trusted_Connection=True;"
+  "DefaultConnection": "Server=.;Database=MiniE_CommerceDB;Integrated Security=true;TrustServerCertificate=True"
 }
 
 
@@ -48,7 +48,7 @@ dotnet ef database update
 Run the Application:
 dotnet run
 
-The API will be available at https://localhost:5001 (or the port specified in launchSettings.json).
+The API will be available at [https://localhost:7053] (or the port specified in launchSettings.json).
 
 
 API Endpoints
